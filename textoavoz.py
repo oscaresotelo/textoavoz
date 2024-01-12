@@ -25,7 +25,7 @@ def main(prompt) -> None:
     pass
 
 stt_button = Button(label="Speak", width=100)
-st.tittle("mensaje")
+st.title("mensaje")
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
     recognition.continuous = true;
