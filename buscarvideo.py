@@ -1,7 +1,9 @@
 from pytube import Search
 import webbrowser
+import streamlit as st
 
 def buscar_videos_en_youtube(palabra_clave, max_resultados=5):
+    st.write(palabra_clave)
     try:
         # Crear un objeto de búsqueda
         search_query = Search(palabra_clave)
